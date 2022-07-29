@@ -1,0 +1,32 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+        //programa para verificar a diferença de idade
+        //primeira parte  criar uma função para fazer o calculo das idades
+
+
+        //criando a função document
+        function mostrar(conteudo){
+            document.write(conteudo);
+        }
+
+        //criando a função pularlinha
+        function pularlinha(){
+            document.write("<br>")
+        }
+        //criando as váriaveis para armazenar as idades
+        var idadeMarcio = 70;
+        var idadePaulo = 65;
+
+        //criando a funcao
+        function calcularDiferencaIdade(idade1, idade2){
+            var resultado =   idadeMarcio - idadePaulo;
+            return resultado;
+        }
+
+        //Mostrando os resultado no console
+        mostrar(`Marcio tem  ${idadeMarcio} e  Paulo tem  ${idadePaulo}`);
+        pularlinha();
+        mostrar("A diferença entre Marcio e Paulo é de " + calcularDiferencaIdade() );  
+    </script>
+</html>
