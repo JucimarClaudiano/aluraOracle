@@ -1,0 +1,30 @@
+<html>
+    <meta charset="UTF-8"> 
+    <script>
+
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function mostrar(conteudo){
+            document.write(conteudo);
+            pularLinha();
+        }
+
+       var numeroPensado = 4;
+       var contador = 1;
+
+       while(contador <= 3){
+           var chute = parseInt(prompt("digite o seu chute"));
+
+           if(chute == numeroPensado){
+            mostrar("Você acertou o número pensado  é " + numeroPensado);
+            break;
+           } else{
+               mostrar("Você errou, tente novamente");
+           }
+           contador++;
+       }
+        mostrar("fim")
+    </script>
+</html>

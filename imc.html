@@ -1,0 +1,29 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+        //programa para  calcular o IMC 
+        //Criando as funções pularLinha e mostrar e calcular o IMC
+        function pularLinha(){
+            document.write("<br>")
+        } 
+        
+        function mostrar(conteudo){
+            document.write(conteudo);
+            pularLinha();
+        }
+
+        function calculoImc(altura, peso)
+        {
+            return peso / (altura * altura);
+            
+        }
+
+        // criando uma função para verificar o seu status
+        
+
+        
+        //chamando as funções
+        mostrar("O meu IMC é de " +   Math.round (calculoImc(1.76, 86))); 
+        
+    </script>
+</html>

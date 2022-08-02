@@ -1,0 +1,45 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function mostrar(conteudo){
+            document.write(conteudo);
+            pularLinha();
+        }
+
+        function sorteia(numero){
+            return Math.round(Math.random() * numero);
+        
+        }
+        
+
+        function verificar(){
+            if(chute == numeropensado){
+                mostrar("acertou");
+            }else{
+                
+            if(chute > numeropensado){
+                mostrar("chute é maior que número pensado")
+            }else{
+                mostrar("chute é menor que número pensado")
+            }
+        }
+        
+    }
+    
+        var numeropensado = sorteia(20);
+        console.log(numeropensado);
+        var chute = parseInt(prompt("Digite um chute"));
+
+        
+        verificar();
+        
+        
+        
+       
+
+    </script>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <meta charset="UTF-8">
+    <body>
+    <script>
+        //Programa para descidir entre alcool e gasolina
+        //Primeira etapa criar uma funcao para calcular o consumo de combustível
+
+        //Utilizando o document para mostrar um título no HTML
+        document.write("<h3>Álcool ou Gasolina</h3> <br>");
+
+        //Criando uma funçao para fazer o cálculo do consumo de combústivel
+        function calculoDoConsumoDeCombustivel(quantidadeDoTanque, kmRodados ){
+
+            var consumo = kmRodados / quantidadeDoTanque;
+            return consumo;
+        }
+        document.write("O consumo de gasolina foi de" + calculoDoConsumoDeCombustivel(40,480) +
+        "km rodados por litros <br>");
+
+        document.write("O consumo de álcool foi de" + calculoDoConsumoDeCombustivel(40,300) +
+        "km rodados por litros <br>");
+
+        
+         
+    </script>
+    </body>
+</html>

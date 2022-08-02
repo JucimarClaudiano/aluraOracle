@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //Criando uma função para executar o <br> do html
+    function pularLinha(){
+        document.write("<br><br>");
+    }
+
+    //Criando a função para substituir o document write
+    function mostrar(conteudo){
+        document.write(conteudo);
+        pularLinha();
+    }
+
+    var ano = 2016;
+
+    mostrar("Flávio tem " + (ano - 1977) + " anos");
+    
+    mostrar("Joaquim tem " + (ano - 1996) + " anos");
+    
+
+    ano = 2017;
+    mostrar("Barney tem " + (ano - 1976) + " anos");
+    mostrar("<br>");
+
+</script>

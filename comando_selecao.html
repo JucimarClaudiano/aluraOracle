@@ -1,0 +1,53 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+        //Programa para mostrar o desempenho do seu time
+        //Primeiro passo criar as funçoes para mostrar e pular linha
+        //Segundo passo criar as variáveis para receber as informções de vitória e empates
+        //Quarto passo criar a função para somar a quantidade de pontos por vitórias
+        //Quinto passo criar uma função para verificar situação do time
+
+
+
+        function mostrar(conteudo){
+            document.write(conteudo);
+            pularLinha();
+
+        }
+            
+
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function calcularPontos(){
+            return (vitorias * 3) + empates;
+        }
+
+        function verificarSituacaoTime(pontos){
+
+            if (calcularPontos() > pontos){
+                mostrar("O seu time está melhor do que o ano passado");
+            }
+
+            if (calcularPontos() < pontos){
+                mostrar("O seu time está pior do que o ano passado");
+            }
+
+            if (calcularPontos()  == pontos){
+                mostrar("O seu time está igual  ao ano passado");
+            }
+
+        }
+
+
+        var vitorias = parseInt(prompt("Informar o número de vitória"));
+        var empates =  parseInt(prompt("Informa o número de empates"));
+       // var pontos = calcularPontos();
+        mostrar("Os pontos do seu timem é " + calcularPontos());
+        verificarSituacaoTime(28);
+       
+        
+
+    </script>
+</html>

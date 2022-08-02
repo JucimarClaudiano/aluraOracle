@@ -1,0 +1,45 @@
+<html>
+    <meta charset="UTF -8">
+    <script>
+        //programa para interagir com o usuário
+        //calcular com o imc através das informações 
+        //informada pelos o usuário
+
+        // primeiro passo criar as funçoes
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function mostrar(conteudo){
+            document.write(conteudo);
+            pularLinha();
+        }
+
+        function calculoImc(){
+            return peso / (altura * altura);
+        }
+
+        //segundo passo criando a funçao para  verificar situação do seu peso
+        function verificarSituacaoPeso(){
+            if(calculoImc() < 18.5){
+                mostrar("abaixo do peso " + calculoImc())
+            } if( calculoImc() > 18.5 && calculoImc() < 35){
+                mostrar("Seu peso está execelente" + calculoImc());
+
+            }else {
+                mostrar("Você está acima do peso " + calculoImc());
+            }
+
+        }
+
+        
+
+        mostrar("<h3>Calculo do IMC</h3>")
+        var nome = prompt("digite o seu nome");
+        var altura = prompt(" informe a sua altura");
+        var peso = prompt("informe o seu peso");
+
+         mostrar("O seu IMC é de  " + calculoImc() );
+         verificarSituacaoPeso();
+    </script> 
+</html>
